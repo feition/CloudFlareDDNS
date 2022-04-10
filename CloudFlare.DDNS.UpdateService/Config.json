@@ -1,0 +1,25 @@
+{
+  "IPV4AddrSourceUrl": "https://ip4.seeip.org",
+  "IPV6AddrSourceUrl": "https://ip6.seeip.org",
+  "AccountConfigList": [
+    {
+      "EMailAddr": "demo@outlook.com",
+      "APIKey": "ABCDEFGHIJKL",
+      "RecordConfigList": [
+        {
+          "RecordName": "ipv4",
+          "ZoneName": "test1.cc"
+        },
+        {
+          "RecordName": "news",
+          "ZoneName": "test1.cc"
+        },
+        {
+          "RecordName": "ipv6",
+          "ZoneName": "test2.cc"
+        }
+      ]
+    }
+  ],
+  "CheckInterval": 1.0
+}

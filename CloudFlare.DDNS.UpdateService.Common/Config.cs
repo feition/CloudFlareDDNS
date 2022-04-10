@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace CloudFlare.DDNS.UpdateService.Common
 {
@@ -18,6 +19,7 @@ namespace CloudFlare.DDNS.UpdateService.Common
         /// </summary>
         public string ZoneName { get; set; }
 
+        [JsonIgnore]
         public string FullName
         {
             get

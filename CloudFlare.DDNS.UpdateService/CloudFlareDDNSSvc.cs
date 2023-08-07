@@ -49,6 +49,8 @@ namespace CloudFlare.DDNS.UpdateService
             tmr.Interval = cfg.CheckInterval * 60 * 1000;
 
             tmr.Start();
+
+            System.Threading.ThreadPool.QueueUserWorkItem((inObj) => Sync(), null);
         }
 
         void tmr_Elapsed(object sender, ElapsedEventArgs e)
